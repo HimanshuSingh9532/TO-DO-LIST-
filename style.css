@@ -54,6 +54,12 @@
   outline: none;
   color: #fff;
   border-radius: 20px;
+  cursor: pointer;
+}
+.row button:hover{
+  color: black;
+  background: #4e085f;
+  font-weight: bolder;
 }
 ul li{
  font-size: 20px;
@@ -76,4 +82,11 @@ ul li::before{
   background-position: center;
   top: 12px;
   left: 8px;
+}
+ul li.checked{
+  color: #555;
+  text-decoration: line-through;
+}
+ul li.checked::before{
+  background-image: url(images/checked.png);
 }
