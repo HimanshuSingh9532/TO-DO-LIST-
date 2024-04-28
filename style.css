@@ -3,13 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-.container{
+.container {
   width: 100%;
   min-height: 100vh;
   background: linear-gradient(135deg, #153677, #4e085f);
   padding: 10px;
 }
-.to-do-app{
+.to-do-app {
   width: 100%;
   max-width: 540px;
   background: #fff;
@@ -17,17 +17,17 @@
   padding: 40px 30px 70px;
   border-radius: 20px;
 }
-.to-do-app h2{
+.to-do-app h2 {
   color: #002765;
   display: flex;
   align-items: center;
   margin-bottom: 20px;
-  
-} .to-do-app h2 img{
+}
+.to-do-app h2 img {
   width: 40px;
   margin-left: 10px;
 }
-.row{
+.row {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -36,7 +36,7 @@
   padding-left: 20px;
   margin-bottom: 25px;
 }
-.row input{
+.row input {
   width: 100%;
   height: 40px;
   border: none;
@@ -45,7 +45,7 @@
   font-weight: 500;
   font-weight: bolder;
 }
-.row button{
+.row button {
   width: 120px;
   height: 40px;
   font-size: 20px;
@@ -56,23 +56,23 @@
   border-radius: 20px;
   cursor: pointer;
 }
-.row button:hover{
+.row button:hover {
   color: black;
   background: #4e085f;
   font-weight: bolder;
 }
-ul li{
- font-size: 20px;
- padding: 12px 8px 12px 50px;
- font-weight: bold;
- list-style: none;
- user-select: none;
- cursor: pointer;
- position: relative;
+ul li {
+  font-size: 20px;
+  padding: 12px 8px 12px 50px;
+  font-weight: bold;
+  list-style: none;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
 }
 
-ul li::before{
-  content: '';
+ul li::before {
+  content: "";
   position: absolute;
   height: 28px;
   width: 28px;
@@ -83,10 +83,26 @@ ul li::before{
   top: 12px;
   left: 8px;
 }
-ul li.checked{
+ul li.checked {
   color: #555;
   text-decoration: line-through;
 }
-ul li.checked::before{
+ul li.checked::before {
   background-image: url(images/checked.png);
+}
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+}
+ul li span:hover {
+  background-color: #edeef0;
+  border-radius: 50%;
+  color: red;
 }
