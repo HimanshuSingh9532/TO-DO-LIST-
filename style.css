@@ -102,7 +102,7 @@ ul li span {
   text-align: center;
 }
 ul li span:hover {
-  background-color: #edeef0;
+  background-color:gray;
   border-radius: 50%;
   color: red;
 }
